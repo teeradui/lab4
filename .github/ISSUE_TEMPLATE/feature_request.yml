@@ -17,8 +17,6 @@ body:
     validations:
       required: false
  
-  
-
   - type: dropdown
     id: request
     attributes:
@@ -30,6 +28,7 @@ body:
       default: 0
     validations:
       required: true
+      
   - type: dropdown
     id: os
     attributes:
@@ -39,11 +38,13 @@ body:
         - Mac
         - Window
         - Linux
+        
   - type: textarea
     id: details
     attributes:
       label: What are the details of your suggestion?
       description: Explain what do you want.
+      placeholder: Feature detail!
       render: shell
 
  
